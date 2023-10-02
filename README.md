@@ -23,6 +23,7 @@
 11.FileOperations类：用于文件操作，包括读取和写入数据，以实现信息在各个程序之间的传递  
 
 #**流程图**  
+![Imange text](https://github.com/banber0/expermint_two/blob/main/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)  
 
 
 #**关键代码**  

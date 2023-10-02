@@ -28,7 +28,7 @@
 #**关键代码**  
 1.学生选课模块ChoiceSubject类  
 '
-    public ChoiceSubject() {
+    'public ChoiceSubject() {
         // ... （省略部分代码）
 
         confirmButton.addActionListener(new ActionListener() {
@@ -53,7 +53,7 @@
 'ChoiceSubject 类允许学生选择课程，将选课结果写入文件，并提供友好的界面交互'  
 2.退课模块  
 '
-    public QuitSubjects() {
+    'public QuitSubjects() {
         // ... （省略部分代码）
 
         quitButton.addActionListener(new ActionListener() {

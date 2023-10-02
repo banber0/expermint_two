@@ -42,7 +42,7 @@
 6.选课成功  
 ![Imange text](https://github.com/banber0/expermint_two/blob/main/%E9%80%89%E8%AF%BE%E6%88%90%E5%8A%9F.png)  
 7.退课  
-![Imange text]()
+![Imange text](https://github.com/banber0/expermint_two/blob/main/%E9%80%80%E8%AF%BE%E6%88%90%E5%8A%9F.png)
 
 #感想与体会  
 

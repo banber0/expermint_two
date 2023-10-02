@@ -1,4 +1,4 @@
-**=一实验目的=**  
+**#一实验目的**  
 1.模拟学生选课系统  
 2.创建基本的图形用户界面应用程序  
 3.展示身份验证原理  
@@ -26,6 +26,82 @@
 
 
 #**关键代码**  
+1.学生选课模块ChoiceSubject类  
+'public class ChoiceSubject extends JFrame {
+    // ... （省略部分代码）
+
+    public ChoiceSubject() {
+        // ... （省略部分代码）
+
+        confirmButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // 获取勾选的课程并将其写入文件
+                String selectedSubjects = "选修的课程：";
+                for (int i = 0; i < subjects.length; i++) {
+                    if (checkBoxes[i].isSelected()) {
+                        selectedSubjects += subjects[i] + " ";
+                    }
+                }
+                // 假设当前登录的学生名字为"张三"
+                FileOperations.writeFile("selected_subjects.txt", "张三: " + selectedSubjects);
+                JOptionPane.showMessageDialog(null, "选课成功！", "提示", JOptionPane.INFORMATION_MESSAGE);
+                dispose();
+            }
+        });
+
+        // ... （省略部分代码）
+    }
+}'  
+'ChoiceSubject 类允许学生选择课程，将选课结果写入文件，并提供友好的界面交互'  
+2.退课模块  
+'public class QuitSubjects extends JFrame {
+    // ... （省略部分代码）
+
+    public QuitSubjects() {
+        // ... （省略部分代码）
+
+        quitButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // 获取用户选择要退课的课程
+                String selectedSubjects = "";
+                for (int i = 0; i < subjectList.getSelectedValuesList().size(); i++) {
+                    selectedSubjects += subjectList.getSelectedValuesList().get(i) + " ";
+                }
+                // 假设当前登录的学生名字为"张三"
+                FileOperations.writeFile("selected_subjects.txt", "张三: " + selectedSubjects);
+                JOptionPane.showMessageDialog(null, "退课成功！", "提示", JOptionPane.INFORMATION_MESSAGE);
+                // 关闭当前窗口
+                QuitSubjects.this.dispose();
+            }
+        });
+
+        // ... （省略部分代码）
+    }
+}'  
+'QuitSubjects 类允许学生退课，将退课结果更新到文件中，并提供友好的界面交互'  
+3.用户类  
+'public class UserManager {
+    // ... （省略部分代码）
+
+    public boolean registerUser(String username, String password, String userType) {
+        // 用户注册逻辑，将用户信息存储到内存中
+        // ...
+
+        return true; // 注册成功
+    }
+
+    public User loginUser(String username, String password, UserRole userRole) {
+        // 用户登录逻辑，验证用户名、密码、角色，返回用户对象
+        // ...
+
+        return null; // 登录失败
+    }
+
+    // ... （省略部分代码）
+}'  
+'registerUser 方法用于用户注册，将用户信息存储在内存中（此代码未实际实现文件存储）  
+loginUser 方法用于用户登录，验证用户名、密码和角色，返回用户对象  
+UserManager 类管理用户的注册和登录，根据提供的用户名、密码和角色验证用户身份  '
 
 
 #**系统运行截图**  

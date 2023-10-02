@@ -27,9 +27,7 @@
 
 #**关键代码**  
 1.学生选课模块ChoiceSubject类  
-'public class ChoiceSubject extends JFrame {
-    // ... （省略部分代码）
-
+'
     public ChoiceSubject() {
         // ... （省略部分代码）
 
@@ -54,9 +52,7 @@
 }'  
 'ChoiceSubject 类允许学生选择课程，将选课结果写入文件，并提供友好的界面交互'  
 2.退课模块  
-'public class QuitSubjects extends JFrame {
-    // ... （省略部分代码）
-
+'
     public QuitSubjects() {
         // ... （省略部分代码）
 
@@ -99,9 +95,11 @@
 
     // ... （省略部分代码）
 }'  
-'registerUser 方法用于用户注册，将用户信息存储在内存中（此代码未实际实现文件存储）  
+'
+registerUser 方法用于用户注册，将用户信息存储在内存中（此代码未实际实现文件存储）  
 loginUser 方法用于用户登录，验证用户名、密码和角色，返回用户对象  
-UserManager 类管理用户的注册和登录，根据提供的用户名、密码和角色验证用户身份  '
+UserManager 类管理用户的注册和登录，根据提供的用户名、密码和角色验证用户身份  
+'
 
 
 #**系统运行截图**  

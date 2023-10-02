@@ -27,8 +27,8 @@
 
 #**关键代码**  
 1.学生选课模块ChoiceSubject类  
-'
-    'public ChoiceSubject() {
+
+    public ChoiceSubject() {
         // ... （省略部分代码）
 
         confirmButton.addActionListener(new ActionListener() {
